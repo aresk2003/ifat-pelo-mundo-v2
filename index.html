@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas Frequentes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <!--As (div) são as perguntas e respostas-->
+         <!--(Button) é o titulo da pergunta e o (p) é a resposta-->
+    <div class="faq-container">
+        <h1>IFAT pelo mundo</h1>
+        <h2>IFAT around the world</h2>
+        <h2>IFAT en el mundo</h2>
+        <div class="faq-item">
+            <button class="faq-question"><a href="https://ifat.de/en/ifat-worldwide/"> IFAT Worldwide</a></button>
+            <div class="faq-answer">
+               <!--- <p><a href="https://ifat.de/en/ifat-worldwide/"> IFAT Worldwide</a>-->
+               <!---<p>O EAtech Conference é o principal evento anual da rede, reunindo profissionais renomados do setor de TI para discutir inovações tecnológicas, networking e compartilhar cases de sucesso.</p>-->
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question"><a href="https://ifat.de/de/messe/"> IFAT Munich</a></button>
+            <div class="faq-answer">
+                  </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question"><a href="https://www.ifat-eurasia.com/en/home/"> IFAT Eurasia</a></button>
+            <div class="faq-answer">
+        
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question"><a href="https://ifat-india.com/en/"> IFAT India</a></button>
+            <div class="faq-answer">
+                </div>
+        </div>
+            <div class="faq-item">
+                <button class="faq-question"><a href="https://www.ie-expo.com/"> IE Expo China</button>
+                <div class="faq-answer">
+                    </div>
+            </div>
+
+                <div class="faq-item">
+                    <button class="faq-question"><a href="https://ifat-africa.com/en/"> IFAT Africa</button>
+                    <div class="faq-answer">
+                         </div>
+                </div>
+                    <div class="faq-item">
+                        <button class="faq-question"><a href="https://www.siww.com.sg/water-expo"> SIWW Water Expo Singapura</button>
+                        <div class="faq-answer">
+                            </div>
+                    </div>
+
+                        <div class="faq-item">
+                            <button class="faq-question"><a href="https://sz.ie-expo.com/"> IE Expo Shenzen</button>
+                            <div class="faq-answer">
+                                 </div>
+                                </div>
+
+                                 <div class="faq-item">
+                                    <button class="faq-question"><a href="https://gz.ie-expo.com/"> IE Expo Guangzhou</button>
+                                    <div class="faq-answer">
+                                        </div>
+                                    </div>
+
+                                        <div class="faq-item">
+                                            <button class="faq-question"><a href="https://ifat.de/en/cooperations/"> IFAT Cooperations</button>
+                                            <div class="faq-answer">
+                                                </div>
+                                            </div>
+    </div>
+
+     <!--(Script está fazendo uma função que toda vez que clicar em uma pergunta ele fecha a aberta)-->
+    <script>
+        const questions = document.querySelectorAll('.faq-question');
+        questions.forEach((question, index) => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const otherAnswers = document.querySelectorAll('.faq-answer');
+                otherAnswers.forEach((otherAnswer, i) => {
+                    if (i !== index) {
+                        otherAnswer.classList.remove('active');
+                    }
+                });
+                answer.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
