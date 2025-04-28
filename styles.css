@@ -1,9 +1,7 @@
-
-
         /*Body é a cor de fundo geral, fonte e etc*/
 body {
    
-    background: linear-gradient( #00a521 );  /*Gradiente de cores */
+    background-color:#00910e;
     font-family: Garamond, sans-serif;
    /* background-color: #a43535; */
    background-attachment: fixed;
@@ -18,7 +16,7 @@ body {
     width: 70vw;
     margin: 20px auto;
     padding: 25px;
-    background-color: #009222;
+    background-color:#00910e;
     box-shadow: 0 0 15px rgb(22, 22, 22);
     border-radius: 15px;
 }
@@ -53,7 +51,7 @@ h2 {
 
 /*Cord do botão da pergunta com degrade*/
 .faq-question:hover {
-    background: linear-gradient(#00910e 100%);
+    background-color: #00910e;
     transform: scale(1.05);
 }
 
